@@ -3,10 +3,13 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   colors: {
-    powderWhite: "#FFFDF9",
-    persianGreen: "#06B49A",
-    lightBlue: "#AFDBD2",
-    onyx: "#36313D",
+    green_light: "#00DF5E",
+    gray_50: "#828282",
+    gray_100: "#333333",
+    gray_150: "#212121",
+    gray_200: "#171717",
+
+    white_200: "#F9F9F9",
   },
   fonts: ["sans-serif", "Roboto"],
   fontSizes: {
