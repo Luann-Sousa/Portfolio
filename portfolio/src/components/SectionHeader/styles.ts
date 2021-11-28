@@ -6,9 +6,23 @@ export const Container = styled.div`
   margin-top: 143px;
 `;
 
-export const WrapperSection = styled.div``;
+export const WrapperSection = styled.div`
+  width: 100%;
 
-export const Title = styled.p``;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const SectionFisrt = styled.div``;
+export const Title = styled.p`
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+
+  width: 300px;
+`;
 
 export const SubTitle = styled.p`
   font-family: "DM Sans";
@@ -22,7 +36,7 @@ export const SubTitle = styled.p`
 `;
 
 export const WrapperButtons = styled.div`
-  width: 28%;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -51,9 +65,9 @@ export const TitleButtonDownload = styled.p`
 `;
 
 export const ButtonContact = styled.button`
-  width: 157px;
+  width: 143px;
   height: 42px;
-  left: 308px;
+  left: 150px;
   top: 382px;
 
   background: #171717;
@@ -68,4 +82,10 @@ export const TitleButtonContact = styled.p`
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
+`;
+
+export const WrapperImage = styled.div``;
+export const ImageFirst = styled.img`
+  width: 100%;
+  height: 100%;
 `;
