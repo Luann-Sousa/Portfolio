@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
 `;
-
 export const Navigation = styled.nav`
   width: 100%;
   height: 50px;
@@ -12,9 +11,7 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
 `;
-
 export const WrapperLogo = styled.div``;
-
 export const Title = styled.h1`
   font-family: "DM Sans";
   cursor: pointer;
@@ -25,8 +22,12 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.colors.white_200};
 
   cursor: pointer;
-`;
 
+  :hover {
+    color: ${({ theme }) => theme.colors.green_light};
+    text-decoration: underline;
+  }
+`;
 export const WrapperLinkNavigation = styled.div``;
 export const Ul = styled.ul`
   font-family: "DM Sans";
