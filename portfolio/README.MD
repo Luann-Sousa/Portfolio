@@ -90,6 +90,8 @@ export default class MyDocument extends Document {
     )
   }
 }*
+
+
 </br>
 
     *Nota: Se você já usou o aplicativo create-react antes, você está acostumado a saber onde está seu documento principal, bem, próximo.js não expõe este arquivo, mas você pode substituir o documento padrão adicionando um arquivo _document.js na pasta de páginas.*
