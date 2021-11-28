@@ -55,6 +55,10 @@ export const ButtonDownload = styled.button`
   border: 1px ${({ theme }) => theme.colors.green_light};
 
   cursor: pointer;
+
+  :hover {
+    background-color: ${({ theme }) => theme.colors.green_light_300};
+  }
 `;
 export const TitleButtonDownload = styled.p`
   font-family: "DM Sans";
