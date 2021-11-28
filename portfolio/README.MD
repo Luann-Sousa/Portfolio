@@ -2,7 +2,7 @@
 
 * Para criar um projeto em next-js navegue até onde deseja criar seu projeto(pasta) e em seu terminal digite o seguite comando .</br>
   
-  -> npx create react-app myproject.</br>
+  * npx create react-app myproject.</br>
 
 ## Configurando Typescript ao projeto.</br>
     * Precisamos fazer algumas configurações para esta instalando corretamente o *Typescript* no projeto, vamos precisar de 4(quatro) modúlos.</br>
@@ -61,87 +61,23 @@
 }
 
 
-1. Criar um arquivo chamado _document.js dentro da pasta src e dentro de pages.
+5. Criar um arquivo chamado _document.js dentro da pasta src e dentro de pages.
     * Você pode criar o arquivo _document.js na mão ou digitar seguinte comando.
       * touch pages/_document.js.
 
-2. Quando criamos por padrão o nosso arquivo __document.js ele segue a seguinte configuração.
-
-</b>
-import Document, { Head, Main, NextScript } from 'next/document'
-
-export default class MyDocument extends Document {
-  static getInitialProps ({ renderPage }) {
-    // Returns an object like: { html, head, errorHtml, chunks, styles }     
-    return renderPage();
-  }
-
-  render () {    
-    return (
-      <html>
-        <Head>
-          <title>My page</title>
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </html>
-    )
-  }
-}*
-
-
+6. Quando criamos por padrão o nosso arquivo __document.js ele segue a seguinte configuração.</b>
+  * Acesse a documentação e olhar um exemplo real rs https://nextjs.org/docs/advanced-features/custom-docum
 </br>
 
     *Nota: Se você já usou o aplicativo create-react antes, você está acostumado a saber onde está seu documento principal, bem, próximo.js não expõe este arquivo, mas você pode substituir o documento padrão adicionando um arquivo _document.js na pasta de páginas.*
  
 
 
-8. Quando criamos por  o nosso arquivo __document.js para podermos estar utilizando styled-componets devemos seguir essa configuração.
+7. Quando criamos por  o nosso arquivo __document.js para podermos estar utilizando styled-componets devemos seguir essa configuração.
 
-   [
-       import Document, { Head, Main, NextScript } from 'next/document';
-// Import styled components ServerStyleSheet
-import { ServerStyleSheet } from 'styled-components';
 
-export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    // Step 1: Create an instance of ServerStyleSheet
-    const sheet = new ServerStyleSheet();
-
-    // Step 2: Retrieve styles from components in the page
-    const page = renderPage((App) => (props) =>
-      sheet.collectStyles(<App {...props} />),
-    );
-
-    // Step 3: Extract the styles as <style> tags
-    const styleTags = sheet.getStyleElement();
-
-    // Step 4: Pass styleTags as a prop
-    return { ...page, styleTags };
-  }
-
-  render() {
-    return (
-      <html>
-        <Head>
-          <title>My page</title>
-          {/* Step 5: Output the styles in the head  */}
-          {this.props.styleTags}
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </html>
-    );
-  }
-}
-
-   ]
  
-9. Uma vez feito isso, reinicie seu servidor e o erro deve desaparecer, sua tag deve ser vermelha e os componentes estilizados SSR devem funcionar.
+8. Uma vez feito isso, reinicie seu servidor e o erro deve desaparecer, sua tag deve ser vermelha e os componentes estilizados SSR devem funcionar.
 ## Isso, é Para Recapitular.
     
     * Vamos está implementando a libary styled0=-components em nosso projeto.</br>
