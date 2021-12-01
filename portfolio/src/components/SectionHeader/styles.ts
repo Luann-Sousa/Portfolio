@@ -53,6 +53,7 @@ export const ButtonDownload = styled.button`
 
   background-color: ${({ theme }) => theme.colors.green_light};
   border: 1px ${({ theme }) => theme.colors.green_light};
+  box-sizing: border-box;
 
   cursor: pointer;
 
