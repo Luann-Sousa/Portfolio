@@ -53,6 +53,7 @@ export const ButtonDownload = styled.button`
 
   background-color: ${({ theme }) => theme.colors.green_light};
   border: 1px ${({ theme }) => theme.colors.green_light};
+  box-sizing: border-box;
 
   cursor: pointer;
 
@@ -74,7 +75,7 @@ export const ButtonContact = styled.button`
   left: 150px;
   top: 382px;
 
-  background: #171717;
+  background: #1a1a1a;
   border: 1px solid #333333;
   box-sizing: border-box;
 
@@ -86,6 +87,7 @@ export const TitleButtonContact = styled.p`
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
+  color: ${({ theme }) => theme.colors.white_200};
 `;
 
 export const WrapperImage = styled.div``;
