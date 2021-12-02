@@ -43,24 +43,6 @@
 
 
 
-   *
-   {
-  "presets": [
-    "next/babel"
-  ],
-  "plugins": [
-    [
-      "styled-components",
-      {
-        "ssr": true,
-        "displayName": true,
-        "preprocess": false
-      }
-    ]
-  ]
-}
-
-
 5. Criar um arquivo chamado _document.js dentro da pasta src e dentro de pages.
     * Você pode criar o arquivo _document.js na mão ou digitar seguinte comando.
       * touch pages/_document.js.
