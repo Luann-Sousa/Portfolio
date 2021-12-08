@@ -1,9 +1,9 @@
 import { Container, Title } from "./styles";
 
-const SectionProjects = () => {
+export const SectionProjects = () => {
   return (
     <Container>
-      <Title>Hellow ProgramadorWL</Title>
+      <Title>Projetos</Title>
     </Container>
   );
 };
