@@ -5,8 +5,8 @@ export function SectionAbout() {
       <Title> Sobre mim </Title>
 
       <TextAbout>
-        Olá, tudo bem? :) Sou profissional e especialista em desenvolvimento de
-        aplicativos (mobile) e Web. Apesar de novo no mercado de trabalho de
+        Olá, tudo bem? :) Sou profissional em desenvolvimento de aplicativos
+        (mobile), e Sistemas Web. Apesar de novo no mercado de trabalho de
         programação, obtive bastante experiência em desenvolvimento de sistemas.
         Durante os vários anos que venho constantemente estudando e
         desenvolvendo aplicações (mobiles) e aplicações web. Minhas principais
