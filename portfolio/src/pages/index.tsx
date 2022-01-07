@@ -12,9 +12,8 @@ export default function App() {
       <HeaderSection />
       <SectionAbout />
       <SectionContact />
-
-      <SectionService />
       <SectionProjects />
+      <SectionService />
     </>
   );
 }
