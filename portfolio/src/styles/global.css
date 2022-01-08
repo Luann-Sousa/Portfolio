@@ -7,10 +7,15 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-  padding: 26px 120px 0px 120px;
+  /* padding: 26px 120px 0px 120px; */
   max-width: 100%;
   margin: 0 auto;
 
   background-color: #1a1a1a;
   color: #ffffff;
+}
+
+.App{
+  padding: 26px 120px 0px 120px;
+  max-width: 100%;
 }
