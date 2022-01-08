@@ -59,8 +59,8 @@ export const ImageLeft = styled.img`
   height: 50px;
 `;
 export const CardService = styled.div`
-  width: 350px;
-  height: 240px;
+  width: 100px;
+  height: 100px;
   left: 150px;
 
   background: #212121;
@@ -69,6 +69,12 @@ export const CardService = styled.div`
   box-sizing: border-box;
 
   padding: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
 `;
 
 export const BorderFooter = styled.div`

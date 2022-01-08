@@ -4,6 +4,7 @@ import { SectionAbout } from "../components/SectionAbout";
 import { SectionContact } from "../components/SectionContact";
 import { SectionService } from "../components/SectionService";
 import { SectionProjects } from "../components/SectionProjects";
+import { SectionSkills } from "../components/SectionSkills";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <SectionContact />
       <SectionProjects />
       <SectionService />
+      <SectionSkills />
     </>
   );
 }

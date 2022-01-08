@@ -11,34 +11,51 @@ import {
 } from "./styles";
 import ImageIconLeft from "../../assets/image-left.png";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { BsPhone } from "react-icons/bs";
-import { CgIfDesign } from "react-icons/cg";
-export const SectionService = () => {
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiNextdotjs,
+  SiMysql,
+  SiNodedotjs,
+} from "react-icons/si";
+import { FaHtml5, FaReact } from "react-icons/fa";
+export const SectionSkills = () => {
   return (
     <Container>
-      <Title>Serviços</Title>
+      <Title>Minhas Skills</Title>
 
       <CardWrapper>
         <CardService>
-          <CardIcon>
-            <BsPhone color="green" size={28} />
-          </CardIcon>
-          <SubTitle>Desenvolvimento Mobile</SubTitle>
+          <FaHtml5 size={50} color="#2bcf0a" />
         </CardService>
 
         <CardService>
-          <CardIcon>
-            <CgIfDesign color="green" size={28} />
-          </CardIcon>
-          <SubTitle>UI Designer</SubTitle>
+          <IoLogoCss3 size={50} color="#2bcf0a" />
         </CardService>
 
         <CardService>
-          <CardIcon>
-            <FiChevronLeft color="green" size={28} />
-            <FiChevronRight color="green" size={28} />
-          </CardIcon>
-          <SubTitle>Criaçao de sites responsivos</SubTitle>
+          <SiJavascript size={50} color="#2bcf0a" />
+        </CardService>
+
+        <CardService>
+          <SiTypescript size={50} color="#2bcf0a" />
+        </CardService>
+
+        <CardService>
+          <FaReact size={50} color="#2bcf0a" />
+        </CardService>
+
+        <CardService>
+          <SiNextdotjs size={50} color="#2bcf0a" />
+        </CardService>
+
+        <CardService>
+          <SiMysql size={50} color="#2bcf0a" />
+        </CardService>
+
+        <CardService>
+          <SiNodedotjs size={50} color="#2bcf0a" />
         </CardService>
       </CardWrapper>
     </Container>
