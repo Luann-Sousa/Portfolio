@@ -8,6 +8,16 @@ export const Container = styled.div`
   justify-content: center;
 
   margin-bottom: 100px;
+
+  @media (max-width: 700px) {
+    width: 70rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+  }
 `;
 export const Title = styled.p`
   margin-top: 100px;
@@ -28,6 +38,15 @@ export const CardWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    width: 68rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -69,6 +88,19 @@ export const CardService = styled.div`
   box-sizing: border-box;
 
   padding: 24px;
+
+  @media (max-width: 700px) {
+    width: 340px;
+    height: 240px;
+    left: 150px;
+
+    background: #212121;
+    border: 1px solid #333333;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.green_light};
+    box-sizing: border-box;
+
+    padding: 24px;
+  }
 `;
 
 export const BorderFooter = styled.div`

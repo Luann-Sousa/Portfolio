@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  @media (max-width: 700px) {
+    width: 68rem;
+  }
 `;
 export const Navigation = styled.nav`
   width: 100%;
@@ -10,11 +13,27 @@ export const Navigation = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 export const WrapperLogo = styled.div``;
 export const Title = styled.h1`
   font-family: "DM Sans";
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-size: 28px;
+    line-height: 23px;
+  }
 `;
 export const Link = styled.a`
   font-family: "DM Sans";
@@ -47,4 +66,13 @@ export const Li = styled.li`
   line-height: 23px;
 
   margin: 20px;
+
+  @media (max-width: 700px) {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-size: 28px;
+    line-height: 23px;
+
+    margin: 20px;
+  }
 `;

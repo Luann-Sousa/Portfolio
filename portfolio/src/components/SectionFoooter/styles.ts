@@ -25,4 +25,15 @@ export const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    width: 77.4em;
+    height: 40px;
+
+    background-color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;

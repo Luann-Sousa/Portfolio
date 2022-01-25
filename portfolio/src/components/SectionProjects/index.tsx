@@ -1,3 +1,5 @@
+import imageProjectSaude from "../../assets/aplicativo-saude.png";
+import Image from "next/image";
 import {
   Container,
   Title,
@@ -16,7 +18,7 @@ export const SectionProjects = () => {
       <CardWrapper>
         <CardProject>
           <CardImageProject></CardImageProject>
-          <TitleProject>$Wsfinances</TitleProject>
+          <TitleProject>DoctorJá</TitleProject>
           <SubTitleProject>
             Tecnologias React-Native, JavaScript e Typescript
           </SubTitleProject>

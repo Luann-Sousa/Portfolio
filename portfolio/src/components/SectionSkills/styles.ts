@@ -8,6 +8,16 @@ export const Container = styled.div`
   justify-content: center;
 
   margin-bottom: 100px;
+
+  @media (max-width: 700px) {
+    width: 68rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+  }
 `;
 export const Title = styled.p`
   margin-top: 100px;

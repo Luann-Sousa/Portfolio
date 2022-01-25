@@ -8,6 +8,15 @@ export const Container = styled.div`
   justify-content: center;
 
   margin-bottom: 100px;
+
+  @media (max-width: 700px) {
+    width: 70rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+  }
 `;
 export const Title = styled.p`
   margin-top: 100px;
@@ -28,6 +37,15 @@ export const CardWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    width: 60rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 export const CardProject = styled.div`
@@ -40,6 +58,10 @@ export const CardProject = styled.div`
   box-sizing: border-box;
 
   padding: 24px;
+
+  @media (max-width: 700px) {
+    margin-left: 15px;
+  }
 `;
 
 export const CardImageProject = styled.div`
@@ -51,6 +73,17 @@ export const CardImageProject = styled.div`
   background: #171717;
   border: 1px solid #333333;
   box-sizing: border-box;
+
+  @media (max-width: 700px) {
+    width: 300px;
+    height: 130px;
+
+    top: 1259px;
+
+    background: #171717;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+  }
 `;
 
 export const TitleProject = styled.h2`

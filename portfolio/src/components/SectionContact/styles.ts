@@ -7,6 +7,14 @@ export const Container = styled.div`
   justify-content: space-around;
 
   margin-bottom: 100px;
+  @media (max-width: 700px) {
+    width: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 100px;
+  }
 `;
 export const ContainerIcon = styled.div`
   width: 62px;
@@ -43,6 +51,16 @@ export const Title = styled.p`
   line-height: 23px;
 
   color: #f9f9f9;
+
+  @media (max-width: 700px) {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #f9f9f9;
+  }
 `;
 export const SubTitle = styled.p`
   font-family: "DM Sans";
